@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
 :root {
   --github-ash: #161B22;
   --github-coal: #0D1117;
   --github-grey: #C9D1D9;
   --github-white: #FFF; 
+  --github-blue: #4078C0;
 }
 
 * {
@@ -31,6 +32,10 @@ body {
   position: relative;
   width: 800px;
   height: 600px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -90,6 +95,7 @@ PAGE ONE
   outline: none;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 400;
   color: var(--github-grey);
   width: 69.25%;
   height: 40px;
@@ -99,6 +105,7 @@ PAGE ONE
 }
 
 ::placeholder {
+  font-weight: 400;
   color: var(--github-white);
 }
 
@@ -163,6 +170,7 @@ PAGE TWO
   left: 15%;
   top: 352px;
   font-size: 16px;
+  font-weight: 400;
   color: var(--github-white);
   animation: heartbeat 1.0s linear alternate-reverse infinite;
 }
@@ -175,5 +183,104 @@ PAGE TWO
     opacity: 0;
   }
 }
+
+
+/*
+
+PAGE THREE
+
+*/
+.cards {
+  border: 1px solid var(--github-grey);
+  border-radius: 6px;
+  width: 672px;
+  margin-top: 36px;
+  padding: 40px;
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 267px;
+  height: 318px;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__content {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__avatar--wrapper {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.card__avatar {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.card__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--github-white);
+}
+
+.card__username {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--github-white);
+  margin-bottom: 12px;
+}
+
+.card__blog {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--github-blue);
+}
+
+.card__bio {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.card__social--btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__social--btn {
+  padding: 4px 8px;
+}
+
+.social__btn--icon__wrapper {
+  width: 12px;
+  height: 12px;
+}
+
+.social__btn--icon {
+  width: 100%;
+}
+
+.social__btn--title {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--github-white);
+}
+
+
 
 
