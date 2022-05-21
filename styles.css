@@ -73,6 +73,12 @@ NAVIGATION BAR
   filter: invert();
 }
 
+
+/*
+
+PAGE ONE
+
+*/
 .search__input {
   border: 1px solid var(--github-grey);
   border-radius: 6px;
@@ -84,9 +90,85 @@ NAVIGATION BAR
   height: 40px;
   margin-top: 70px;
   padding: 8px 16px;
+  display: block;
 }
 
 ::placeholder {
   color: var(--github-white);
 }
+
+
+/*
+
+PAGE TWO
+
+*/
+.loading__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pure CSS Loader Library - Start*/
+.lds-dual-ring {
+  position: absolute;
+  left: 290px;
+  top: 104px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 144px;
+  height: 144px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 12px solid var(--github-white);
+  border-color: #C324FF transparent #2E64FF transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Pure CSS Loader Library - End*/
+
+.loading__img {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  width: 112px;
+  animation: heartbeat 1.0s linear alternate-reverse infinite;
+}
+
+.loading__text {
+  position: absolute;
+  left: 15%;
+  top: 352px;
+  font-size: 16px;
+  color: var(--github-white);
+  animation: heartbeat 1.0s linear alternate-reverse infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
