@@ -68,6 +68,11 @@ NAVIGATION BAR
   justify-content: center;
 }
 
+.logo__anchor {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   width: 48px;
   filter: invert();
