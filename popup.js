@@ -1,9 +1,10 @@
 // Variables
 const searchInput = document.getElementById("search__input");
 const loadingPage = document.getElementById("loading__page");
+const githubApiUrl = "https://api.github.com/users/";
 
 
-// Functions
+// Event Listeners & Functions
 loadingPage.style.display = "none";
 
 document.addEventListener("keydown", (event) => {
@@ -16,3 +17,5 @@ document.addEventListener("keydown", (event) => {
       window.open("https://www.github.com");
     }
 })
+
+
