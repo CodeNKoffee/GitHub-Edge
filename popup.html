@@ -18,7 +18,7 @@
   </nav>
   <div class="container">
     <div class="row">
-      <input type="text" id="search__input" class="search__input" placeholder="Search username" onkeydown="load">
+      <input type="text" id="search__input" class="search__input" placeholder="Search username">
       <div id="loading__page" class="loading__page">
         <div class="lds-dual-ring">
           <img src="./assets/launchpad-112.svg" alt="Launchpad-64px from Icons8" class="loading__img">
@@ -27,19 +27,13 @@
           Crunching the latest data, just for you. Hang tight...
         </span>
       </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card__content">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__content--left">
             <figure class="card__avatar--wrapper">
               <img src="" alt="" class="card__avatar">
             </figure>
-            <span class="card__name">John Doe</span>
-            <span class="card__username">@pinacolada</span>
-            <span class="card__location">Cairo, Egypt</span>
             <span class="card__blog">https://www.hatemsoliman.dev</span>
-            <p class="card__bio">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, commodi eveniet! Fugit possimus tempora accusantium illo sint ipsum voluptas quaerat porro quibusdam molestiae deleniti, eligendi animi cupiditate voluptates eaque voluptatum.
-            </p>
             <div class="card__social--btns">
               <a href="" class="card__social--btn">
                 <figure class="social__btn--icon__wrapper">
@@ -53,6 +47,14 @@
                 </figure>
                 <span class="social__btn--title">Twitter</span>
               </a>
+            </div>
+            <div class="card__content--right">
+              <span class="card__name">John Doe</span>
+              <span class="card__username">@pinacolada</span>
+              <span class="card__location">Cairo, Egypt</span>
+              <p class="card__bio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, commodi eveniet! Fugit possimus tempora accusantium illo sint ipsum voluptas quaerat porro quibusdam molestiae deleniti, eligendi animi cupiditate voluptates eaque voluptatum.
+              </p>
             </div>
           </div>
         </div>
