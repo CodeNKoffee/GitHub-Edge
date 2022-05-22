@@ -233,6 +233,7 @@ PAGE THREE
 }
 
 .card__avatar {
+  background-color: var(--github-coal);
   border-radius: 50%;
   width: 100%;
   height: 100%;
