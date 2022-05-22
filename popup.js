@@ -33,21 +33,22 @@ document.addEventListener("keydown", (event) => {
                     <figure class="card__avatar--wrapper">
                       <img src="${data.avatar_url}" alt="${data.login}'s Avatar" class="card__avatar">
                     </figure>
-                    <span class="card__blog">${data.blog}</span>
+                    <a href="${data.blog}" target="_blank" class="card__blog">${data.blog}</a>
                     <div class="card__social--btns">
-                      <a href="${data.html_url}" class="card__social--btn">
+                      <a href="${data.html_url}" target="_blank" class="card__social--btn">
                         <figure class="social__btn--icon__wrapper">
                           <img src="./assets/white-github_icon.svg" alt="GitHub Icon" class="social__btn--icon">
-                      </figure>
-                      <span class="social__btn--title">GitHub</span>
-                    </a>
-                    <a href="https://www.twitter.com/${data.twitter_username}" class="card__social--btn">
-                      <figure class="social__btn--icon__wrapper">
-                        <img src="./assets/white-twitter_icon.svg" alt="Twitter Icon" class="social__btn--icon">
-                      </figure>
-                      <span class="social__btn--title">Twitter</span>
-                    </a>
-                  </div>
+                        </figure>
+                        <span class="social__btn--title">GitHub</span>
+                      </a>
+                      <a href="https://www.twitter.com/${data.twitter_username}" target="_blank" class="card__social--btn card__social--btn--twitter">
+                        <figure class="social__btn--icon__wrapper">
+                          <img src="./assets/white-twitter_icon.svg" alt="Twitter Icon" class="social__btn--icon">
+                        </figure>
+                        <span class="social__btn--title">Twitter</span>
+                      </a>
+                    </div>
+                  </div>  
                   <div class="card__content--right">
                     <span class="card__name">${data.name}</span>
                     <span class="card__username">@${data.login}</span>
