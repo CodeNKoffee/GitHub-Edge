@@ -65,8 +65,8 @@ document.addEventListener("keydown", (event) => {
           }
 
         setTimeout(function() {
-          loadingPage.style.display = "none";
-        }, 5000, row.innerHTML = html)
+          row.innerHTML = html
+        }, 3000)
         })
     }
 
