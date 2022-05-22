@@ -2,12 +2,10 @@
 const searchInput = document.getElementById("search__input");
 const loadingPage = document.getElementById("loading__page");
 const row = document.getElementById("row");
-const returnButton = document.getElementById("return__btn");
 
 
 // EVENT LISTENERS & FUNCTIONS
 loadingPage.style.display = "none";
-returnButton.style.display = "none";
 
 document.addEventListener("keydown", (event) => {
   // IF user prompts an input, add loader
@@ -34,11 +32,9 @@ document.addEventListener("keydown", (event) => {
             if(data.html_url == undefined) {
               let message = `<span class="not__found">Sorry, user has not been found</span>`;
               
-              row.innerHTML = message;
               setTimeout(function() {
-                document.body.style.backgroundImage = "url(./assets/background.png)";
+                row.innerHTML = message;
               }, 5000)
-              searchInput.style.display = "block";
             
             // IF user input is found, proceeds...
             } else {
@@ -57,7 +53,6 @@ document.addEventListener("keydown", (event) => {
               
               // CREATING HTML tags for results
               html += `
-                <button id="return__btn" class="return__btn">Back</button>
                 <div id="card" class="card">
                   <div class="card__content">
                     <div class="card__content--left">
@@ -105,10 +100,7 @@ document.addEventListener("keydown", (event) => {
 
 
     // RETURN button onclick
-    returnButton.addEventListener("click", () => {
-      searchInput.style.display = "block";
-      document.body.style.backgroundImage = "url(./assets/background.png)";
-    })
+
 
   //IF user does not prompt an input
   } else if(event.key == "Enter" && searchInput.value == "") {
