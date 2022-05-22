@@ -192,6 +192,13 @@ PAGE TWO
 PAGE THREE
 
 */
+.not__found {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--github-white);
+  margin-top: 72px;
+}
+
 .card {
   border: 1px solid var(--github-grey);
   border-radius: 6px;
