@@ -8,6 +8,7 @@
   --github-blue: #4078C0;
   --github-green: #6CC644;
   --github-orange: #C9510C;
+  --github-red: #BD2C00;
 }
 
 * {
@@ -38,6 +39,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -192,6 +197,19 @@ PAGE TWO
 PAGE THREE
 
 */
+.return__btn {
+  position: absolute;
+  top: 84px;
+  left: 40px;
+  background-color: var(--github-red);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--github-white);
+  padding: 4px 16px;
+}
+
 .not__found {
   font-size: 32px;
   font-weight: 700;

@@ -33,6 +33,11 @@ document.addEventListener("keydown", (event) => {
               let message = `<span class="not__found">Sorry, user has not been found</span>`;
               
               row.innerHTML = message;
+              setTimeout(function() {
+                row.innerHTML = "";
+              }, 5000)
+              document.body.style.backgroundImage = "./assets/background.png";
+              searchInput.style.display = "block";
             
             // IF user input is found, proceeds...
             } else {
@@ -51,6 +56,7 @@ document.addEventListener("keydown", (event) => {
               
               // CREATING HTML tags for results
               html += `
+                <button id="return__btn" class="return__btn" onclick="returnHome()">Back</button>
                 <div id="card" class="card">
                   <div class="card__content">
                     <div class="card__content--left">
@@ -96,6 +102,13 @@ document.addEventListener("keydown", (event) => {
 
     searchUsers(username);
 
+    
+    // RETURN button onclick
+    document.getElementById("return__btn").addEventListener("click", () => {
+      row.innerHTML = "";
+      searchInput.style.display = "block";
+      document.body.style.backgroundImage = "./assets/background.png";
+    })
 
   //IF user does not prompt an input
   } else if(event.key == "Enter" && searchInput.value == "") {
