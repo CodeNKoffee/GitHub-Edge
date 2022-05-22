@@ -203,6 +203,7 @@ PAGE THREE
   height: 318px;
   padding: 16px 24px;
   display: flex;
+  flex-direction: row !important;
   justify-content: center;
   align-items: center;
 }

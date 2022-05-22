@@ -58,7 +58,6 @@ document.addEventListener("keydown", (event) => {
                   </div>
                 </div>
               </div>
-            </div>  
             `;
           } else {
             html = "Sorry, we didn't find any matching user!";
