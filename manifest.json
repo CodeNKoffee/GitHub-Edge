@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "GitHub Users",
   "description": "Search for the Developer you are looking for from the comfort of your open tab",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icons": {
     "16": "icon_16.png",
     "48": "icon_48.png",

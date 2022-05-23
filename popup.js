@@ -53,6 +53,7 @@ document.addEventListener("keydown", (event) => {
               
               // CREATING HTML tags for results
               html += `
+                <button id="return__btn" class="return__btn">Back</button>
                 <div id="card" class="card">
                   <div class="card__content">
                     <div class="card__content--left">
@@ -100,12 +101,17 @@ document.addEventListener("keydown", (event) => {
 
 
     // RETURN button onclick
-
+    row.addEventListener('click', event => {
+      if(event.target.matches(".return__btn")) {
+        event.preventDefault();
+        document.getElementById("card").style.display = "none"
+        document.getElementById("return__btn").style.display = "none"
+        document.body.style.backgroundImage = "url(./assets/background.png)";
+      }
+    })
 
   //IF user does not prompt an input
   } else if(event.key == "Enter" && searchInput.value == "") {
       window.open("https://www.github.com");
     }
 })
-
-
