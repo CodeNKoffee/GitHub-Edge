@@ -34,7 +34,7 @@ document.addEventListener("keydown", (event) => {
               
               setTimeout(function() {
                 row.innerHTML = message;
-              }, 5000)
+              }, 4000)
             
             // IF user input is found, proceeds...
             } else {
