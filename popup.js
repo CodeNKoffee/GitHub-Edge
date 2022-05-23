@@ -7,7 +7,7 @@ const row = document.getElementById("row");
 // EVENT LISTENERS & FUNCTIONS
 loadingPage.style.display = "none";
 
-document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", function tito(event) {
   // IF user prompts an input, add loader
   if(event.key === "Enter" && searchInput.value !== "") {
     searchInput.style.display = "none";
@@ -30,7 +30,10 @@ document.addEventListener("keydown", (event) => {
           if(data) {
             // IF user input is not found, a message is generated into the DOM
             if(data.html_url == undefined) {
-              let message = `<span class="not__found">Sorry, user has not been found</span>`;
+              let message = `
+                <button id="return__btn" class="return__btn">Back</button>
+                <span class="not__found">Sorry, user has not been found</span>
+              `;
               
               setTimeout(function() {
                 row.innerHTML = message;
@@ -104,9 +107,11 @@ document.addEventListener("keydown", (event) => {
     row.addEventListener('click', event => {
       if(event.target.matches(".return__btn")) {
         event.preventDefault();
-        document.getElementById("card").style.display = "none"
-        document.getElementById("return__btn").style.display = "none"
-        document.body.style.backgroundImage = "url(./assets/background.png)";
+        function refreshPage(){
+          window.location.reload();
+        }
+
+        refreshPage();  
       }
     })
 
