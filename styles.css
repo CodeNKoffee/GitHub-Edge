@@ -96,6 +96,25 @@ NAVIGATION BAR
 PAGE ONE
 
 */
+/* .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--github-grey);
+}
+
+cite {
+  font-size: 8px;
+  font-weight: 400;
+  color: var(--github-white);
+} */
+
 .search__input {
   border: 1px solid var(--github-grey);
   border-radius: 6px;
@@ -106,7 +125,7 @@ PAGE ONE
   color: var(--github-grey);
   width: 69.25%;
   height: 40px;
-  margin-top: 70px;
+  margin-top: 56px;
   padding: 8px 16px;
   display: block;
 }
