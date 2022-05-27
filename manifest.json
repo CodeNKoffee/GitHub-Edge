@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "GitHub Edge",
   "description": "Search your favourite developer from the comfort of your own tab",
   "version": "1.0.0",
