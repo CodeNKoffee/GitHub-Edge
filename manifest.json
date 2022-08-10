@@ -4,12 +4,6 @@
   "description": "Search your favourite developer from the comfort of your own tab",
   "permissions": ["tabs"],
   "host_permissions": ["https://*.github.com/*"],
-  "content_scripts": [
-    {
-      "matches": ["https://*.github.com/*"],
-      "contentScripts": "popup.js"
-    }
-  ],
   "action": {
     "default_icon": {
       "16": "icon_16.png",
