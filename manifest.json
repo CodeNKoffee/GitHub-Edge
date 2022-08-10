@@ -18,5 +18,5 @@
     "default_title": "GitHub Edge",
     "default_popup": "popup.html"
   },
-  "manifest_version": 3
+  "manifest_version": 2
 }
