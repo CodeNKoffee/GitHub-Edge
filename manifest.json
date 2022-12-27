@@ -7,7 +7,6 @@
     "16": "icon_16.png"
   },
   "permissions": [
-    "activeTab",
     "https://api.github.com/*"
   ],
   "background": {
